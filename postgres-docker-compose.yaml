@@ -21,9 +21,9 @@ services:
     image: "postgres:11"
     container_name: ${CONTAINER_NAME:-database}
     ports:
-      - "5432:5432"
+      - "5458:5458"
     expose:
-      - "5432"
+      - "5458"
     environment:
       POSTGRES_DB: "${POSTGRES_DB}"
       POSTGRES_HOST: "${POSTGRES_HOST}"
@@ -50,7 +50,7 @@ services:
       - etl_network
 
 volumes:
-  dbdata: null
+  dbdata: 
 
 networks:
-  etl_network: null
+  etl_network: 
