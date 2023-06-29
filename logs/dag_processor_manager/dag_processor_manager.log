@@ -8271,3 +8271,1450 @@ File Path                                         PID  Runtime      # DAGs    # 
 [2023-06-29 09:01:28,956] {manager.py:495} INFO - Exiting gracefully upon receiving signal 15
 [2023-06-29 09:01:30,112] {manager.py:495} INFO - Exiting gracefully upon receiving signal 15
 [2023-06-29 09:01:34,330] {manager.py:495} INFO - Exiting gracefully upon receiving signal 15
+[2023-06-29T13:57:59.158+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2023-06-29T13:57:59.255+0000] {manager.py:484} INFO - Process each file at most once every 60 seconds
+[2023-06-29T13:57:59.256+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 60 seconds
+[2023-06-29T13:57:59.256+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T13:57:59.258+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T13:58:00.068+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/apartment_transaction_dag.py     60  0.53s             0           0
+================================================================================
+[2023-06-29T13:58:31.679+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/apartment_transaction_dag.py     60  32.13s            0           0
+================================================================================
+[2023-06-29T14:02:09.976+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:02:10.030+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:02:12.612+0000] {manager.py:1160} ERROR - Processor for /opt/airflow/dags/apartment_transaction_dag.py with PID 60 started at 2023-06-29T13:57:59.533735+00:00 has timed out, killing it.
+[2023-06-29T14:02:12.686+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           0           1  253.08s         2023-06-29T14:02:12
+================================================================================
+[2023-06-29T14:02:12.690+0000] {manager.py:520} INFO - DAG apartment_transaction_etl_dag is missing and will be deactivated.
+[2023-06-29T14:02:12.870+0000] {manager.py:530} INFO - Deactivated 1 DAGs which are no longer present in file.
+[2023-06-29T14:02:12.897+0000] {manager.py:534} INFO - Deleted DAG apartment_transaction_etl_dag in serialized_dag table
+[2023-06-29T14:02:43.193+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  3.97s           2023-06-29T14:02:17
+================================================================================
+[2023-06-29T14:03:10.708+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:03:10.722+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:03:14.170+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  3.97s           2023-06-29T14:02:17
+================================================================================
+[2023-06-29T14:03:44.493+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  2.38s           2023-06-29T14:03:19
+================================================================================
+[2023-06-29T14:04:10.884+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:04:10.901+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:04:14.962+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  2.38s           2023-06-29T14:03:19
+================================================================================
+[2023-06-29T14:04:45.204+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  3.85s           2023-06-29T14:04:23
+================================================================================
+[2023-06-29T14:05:11.113+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:05:11.122+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:05:16.188+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  3.85s           2023-06-29T14:04:23
+================================================================================
+[2023-06-29T14:05:46.327+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.35s           2023-06-29T14:05:25
+================================================================================
+[2023-06-29T14:06:13.748+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:06:27.806+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:12:35.466+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py    192  0.03s             1           0  1.35s           2023-06-29T14:05:25
+================================================================================
+[2023-06-29T14:12:35.538+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:12:35.619+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:12:39.923+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-06-29T14:12:39.946+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-06-29T14:12:44.467+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-06-29T14:28:43.178+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2023-06-29T14:28:43.184+0000] {manager.py:484} INFO - Process each file at most once every 60 seconds
+[2023-06-29T14:28:43.185+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 60 seconds
+[2023-06-29T14:28:43.187+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:28:43.204+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:28:43.404+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/apartment_transaction_dag.py     58  0.11s             0           0
+================================================================================
+[2023-06-29T14:29:13.527+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  6.10s           2023-06-29T14:28:49
+================================================================================
+[2023-06-29T14:29:43.771+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:29:43.782+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:29:43.846+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  6.10s           2023-06-29T14:28:49
+================================================================================
+[2023-06-29T14:30:14.048+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.75s           2023-06-29T14:29:51
+================================================================================
+[2023-06-29T14:30:43.958+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:30:43.973+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:30:44.241+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.75s           2023-06-29T14:29:51
+================================================================================
+[2023-06-29T14:31:14.392+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.98s           2023-06-29T14:30:54
+================================================================================
+[2023-06-29T14:31:44.267+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:31:44.270+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:31:44.571+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.98s           2023-06-29T14:30:54
+================================================================================
+[2023-06-29T14:32:14.714+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.71s           2023-06-29T14:31:56
+================================================================================
+[2023-06-29T14:32:44.850+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:32:44.852+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:32:44.863+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.71s           2023-06-29T14:31:56
+================================================================================
+[2023-06-29T14:33:14.996+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.83s           2023-06-29T14:32:58
+================================================================================
+[2023-06-29T14:33:45.150+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:33:45.151+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:33:45.163+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.83s           2023-06-29T14:32:58
+================================================================================
+[2023-06-29T14:34:15.349+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  2.14s           2023-06-29T14:34:00
+================================================================================
+[2023-06-29T14:34:45.522+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:34:45.595+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:34:45.625+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  2.14s           2023-06-29T14:34:00
+================================================================================
+[2023-06-29T14:35:15.779+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.46s           2023-06-29T14:35:02
+================================================================================
+[2023-06-29T14:35:45.952+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:35:45.953+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:35:45.962+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.46s           2023-06-29T14:35:02
+================================================================================
+[2023-06-29T14:36:16.022+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.49s           2023-06-29T14:36:03
+================================================================================
+[2023-06-29T14:36:46.201+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:36:46.202+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:36:46.212+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.49s           2023-06-29T14:36:03
+================================================================================
+[2023-06-29T14:37:16.892+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.59s           2023-06-29T14:37:04
+================================================================================
+[2023-06-29T14:37:47.086+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:37:47.087+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:37:47.098+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.59s           2023-06-29T14:37:04
+================================================================================
+[2023-06-29T14:38:17.304+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.37s           2023-06-29T14:38:05
+================================================================================
+[2023-06-29T14:38:47.449+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:38:47.450+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:38:47.462+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.37s           2023-06-29T14:38:05
+================================================================================
+[2023-06-29T14:39:17.471+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.57s           2023-06-29T14:39:06
+================================================================================
+[2023-06-29T14:39:47.606+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:39:47.608+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:39:47.617+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.57s           2023-06-29T14:39:06
+================================================================================
+[2023-06-29T14:40:17.783+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.35s           2023-06-29T14:40:07
+================================================================================
+[2023-06-29T14:40:47.970+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:40:47.970+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:40:47.981+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.35s           2023-06-29T14:40:07
+================================================================================
+[2023-06-29T14:41:18.407+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.39s           2023-06-29T14:41:07
+================================================================================
+[2023-06-29T14:41:48.595+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:41:48.598+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:41:48.613+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.39s           2023-06-29T14:41:07
+================================================================================
+[2023-06-29T14:42:18.901+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.30s           2023-06-29T14:42:08
+================================================================================
+[2023-06-29T14:42:49.049+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:42:49.050+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:42:49.058+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.30s           2023-06-29T14:42:08
+================================================================================
+[2023-06-29T14:43:19.359+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.43s           2023-06-29T14:43:08
+================================================================================
+[2023-06-29T14:43:49.538+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:43:49.539+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:43:49.548+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.43s           2023-06-29T14:43:08
+================================================================================
+[2023-06-29T14:44:19.951+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.36s           2023-06-29T14:44:09
+================================================================================
+[2023-06-29T14:44:50.123+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:44:50.124+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:44:50.134+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.36s           2023-06-29T14:44:09
+================================================================================
+[2023-06-29T14:45:20.370+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.35s           2023-06-29T14:45:09
+================================================================================
+[2023-06-29T14:45:50.527+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:45:50.529+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:45:50.539+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.35s           2023-06-29T14:45:09
+================================================================================
+[2023-06-29T14:46:20.960+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.42s           2023-06-29T14:46:10
+================================================================================
+[2023-06-29T14:46:51.111+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:46:51.112+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:46:51.121+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.42s           2023-06-29T14:46:10
+================================================================================
+[2023-06-29T14:47:21.303+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.09s           2023-06-29T14:47:11
+================================================================================
+[2023-06-29T14:47:51.501+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:47:51.503+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:47:51.514+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  1.09s           2023-06-29T14:47:11
+================================================================================
+[2023-06-29T14:48:21.715+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.50s           2023-06-29T14:48:12
+================================================================================
+[2023-06-29T14:48:51.899+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:48:51.902+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:48:51.930+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.50s           2023-06-29T14:48:12
+================================================================================
+[2023-06-29T14:49:21.995+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.52s           2023-06-29T14:49:12
+================================================================================
+[2023-06-29T14:49:52.144+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:49:52.145+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:49:52.156+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.52s           2023-06-29T14:49:12
+================================================================================
+[2023-06-29T14:50:22.323+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.41s           2023-06-29T14:50:13
+================================================================================
+[2023-06-29T14:50:52.523+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:50:52.528+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:50:52.547+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.41s           2023-06-29T14:50:13
+================================================================================
+[2023-06-29T14:51:23.097+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.38s           2023-06-29T14:51:14
+================================================================================
+[2023-06-29T14:51:52.591+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:51:52.596+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:51:53.264+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.38s           2023-06-29T14:51:14
+================================================================================
+[2023-06-29T14:52:23.412+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.63s           2023-06-29T14:52:15
+================================================================================
+[2023-06-29T14:52:53.578+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:52:53.579+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:52:53.589+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.63s           2023-06-29T14:52:15
+================================================================================
+[2023-06-29T14:53:23.770+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.39s           2023-06-29T14:53:16
+================================================================================
+[2023-06-29T14:53:53.937+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:53:53.941+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:53:53.961+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.39s           2023-06-29T14:53:16
+================================================================================
+[2023-06-29T14:54:24.090+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.60s           2023-06-29T14:54:17
+================================================================================
+[2023-06-29T14:54:54.240+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:54:54.241+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:54:54.256+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.60s           2023-06-29T14:54:17
+================================================================================
+[2023-06-29T14:55:24.436+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.34s           2023-06-29T14:55:17
+================================================================================
+[2023-06-29T14:55:54.606+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:55:54.607+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:55:54.617+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.34s           2023-06-29T14:55:17
+================================================================================
+[2023-06-29T14:56:25.086+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.44s           2023-06-29T14:56:18
+================================================================================
+[2023-06-29T14:56:55.261+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:56:55.262+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:56:55.274+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.44s           2023-06-29T14:56:18
+================================================================================
+[2023-06-29T14:57:25.507+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.37s           2023-06-29T14:56:57
+================================================================================
+[2023-06-29T14:57:55.676+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:57:55.677+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:57:55.691+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.37s           2023-06-29T14:56:57
+================================================================================
+[2023-06-29T14:58:26.283+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.35s           2023-06-29T14:58:16
+================================================================================
+[2023-06-29T14:58:56.474+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T14:58:56.475+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T14:58:56.485+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.35s           2023-06-29T14:58:16
+================================================================================
+[2023-06-29T14:59:09.197+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-06-29T15:05:33.103+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2023-06-29T15:05:33.111+0000] {manager.py:484} INFO - Process each file at most once every 60 seconds
+[2023-06-29T15:05:33.111+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 60 seconds
+[2023-06-29T15:05:33.111+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:05:33.128+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:05:33.577+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/apartment_transaction_dag.py     55  0.21s             0           0
+================================================================================
+[2023-06-29T15:06:03.854+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  5.39s           2023-06-29T15:05:38
+================================================================================
+[2023-06-29T15:06:34.075+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:06:34.102+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:06:34.142+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  5.39s           2023-06-29T15:05:38
+================================================================================
+[2023-06-29T15:07:04.354+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  4.48s           2023-06-29T15:06:43
+================================================================================
+[2023-06-29T15:07:34.540+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:07:34.542+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:07:34.565+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  4.48s           2023-06-29T15:06:43
+================================================================================
+[2023-06-29T15:08:04.754+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.66s           2023-06-29T15:07:44
+================================================================================
+[2023-06-29T15:08:34.929+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:08:34.930+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:08:34.941+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.66s           2023-06-29T15:07:44
+================================================================================
+[2023-06-29T15:09:05.121+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.75s           2023-06-29T15:08:45
+================================================================================
+[2023-06-29T15:09:35.053+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:09:35.054+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:09:35.291+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.75s           2023-06-29T15:08:45
+================================================================================
+[2023-06-29T15:10:05.454+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.46s           2023-06-29T15:09:46
+================================================================================
+[2023-06-29T15:10:35.619+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:10:35.623+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:10:35.643+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.46s           2023-06-29T15:09:46
+================================================================================
+[2023-06-29T15:11:06.055+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.52s           2023-06-29T15:10:47
+================================================================================
+[2023-06-29T15:11:36.242+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:11:36.243+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:11:36.253+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.52s           2023-06-29T15:10:47
+================================================================================
+[2023-06-29T15:12:06.713+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.64s           2023-06-29T15:11:47
+================================================================================
+[2023-06-29T15:12:36.879+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:12:36.880+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:12:36.892+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.64s           2023-06-29T15:11:47
+================================================================================
+[2023-06-29T15:13:06.990+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.62s           2023-06-29T15:12:48
+================================================================================
+[2023-06-29T15:13:37.178+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:13:37.179+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:13:37.189+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.62s           2023-06-29T15:12:48
+================================================================================
+[2023-06-29T15:14:07.751+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.54s           2023-06-29T15:13:49
+================================================================================
+[2023-06-29T15:14:37.922+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:14:37.924+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:14:37.939+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.54s           2023-06-29T15:13:49
+================================================================================
+[2023-06-29T15:15:08.195+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.44s           2023-06-29T15:14:50
+================================================================================
+[2023-06-29T15:15:38.356+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:15:38.357+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:15:38.365+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.44s           2023-06-29T15:14:50
+================================================================================
+[2023-06-29T15:16:08.855+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.60s           2023-06-29T15:15:51
+================================================================================
+[2023-06-29T15:16:39.043+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:16:39.044+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:16:39.056+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.60s           2023-06-29T15:15:51
+================================================================================
+[2023-06-29T15:17:09.445+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           0           1  0.06s           2023-06-29T15:17:05
+================================================================================
+[2023-06-29T15:17:39.668+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:17:39.669+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:17:39.677+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           0           1  0.06s           2023-06-29T15:17:05
+================================================================================
+[2023-06-29T15:18:09.844+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.56s           2023-06-29T15:17:43
+================================================================================
+[2023-06-29T15:18:39.993+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:18:39.994+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:18:40.004+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.56s           2023-06-29T15:17:43
+================================================================================
+[2023-06-29T15:19:10.173+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.60s           2023-06-29T15:18:44
+================================================================================
+[2023-06-29T15:19:40.329+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:19:40.330+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:19:40.342+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.60s           2023-06-29T15:18:44
+================================================================================
+[2023-06-29T15:20:10.567+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.67s           2023-06-29T15:19:45
+================================================================================
+[2023-06-29T15:20:40.716+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:20:40.718+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:20:40.732+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.67s           2023-06-29T15:19:45
+================================================================================
+[2023-06-29T15:21:10.885+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.62s           2023-06-29T15:20:45
+================================================================================
+[2023-06-29T15:21:41.053+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:21:41.054+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:21:41.067+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.62s           2023-06-29T15:20:45
+================================================================================
+[2023-06-29T15:22:11.356+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.62s           2023-06-29T15:21:46
+================================================================================
+[2023-06-29T15:22:41.511+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:22:41.512+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:22:41.525+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.62s           2023-06-29T15:21:46
+================================================================================
+[2023-06-29T15:23:11.691+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.74s           2023-06-29T15:22:47
+================================================================================
+[2023-06-29T15:23:41.853+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:23:41.855+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:23:41.870+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.74s           2023-06-29T15:22:47
+================================================================================
+[2023-06-29T15:24:12.145+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.54s           2023-06-29T15:23:48
+================================================================================
+[2023-06-29T15:24:42.025+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:24:42.027+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:24:42.717+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.73s           2023-06-29T15:24:28
+================================================================================
+[2023-06-29T15:25:12.861+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.73s           2023-06-29T15:24:28
+================================================================================
+[2023-06-29T15:25:42.327+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:25:42.328+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:25:42.958+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.62s           2023-06-29T15:25:29
+================================================================================
+[2023-06-29T15:26:13.104+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.62s           2023-06-29T15:25:29
+================================================================================
+[2023-06-29T15:26:42.631+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:26:42.632+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:26:43.646+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.69s           2023-06-29T15:26:30
+================================================================================
+[2023-06-29T15:27:13.798+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.69s           2023-06-29T15:26:30
+================================================================================
+[2023-06-29T15:27:43.215+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:27:43.217+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:27:44.234+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.56s           2023-06-29T15:27:31
+================================================================================
+[2023-06-29T15:28:14.382+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.56s           2023-06-29T15:27:31
+================================================================================
+[2023-06-29T15:28:43.391+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:28:43.394+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:28:44.411+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.85s           2023-06-29T15:28:32
+================================================================================
+[2023-06-29T15:29:14.985+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.71s           2023-06-29T15:29:11
+================================================================================
+[2023-06-29T15:29:43.454+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:29:43.455+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:29:45.142+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.71s           2023-06-29T15:29:11
+================================================================================
+[2023-06-29T15:30:15.630+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.81s           2023-06-29T15:30:08
+================================================================================
+[2023-06-29T15:30:43.770+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:30:43.772+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:30:45.796+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.81s           2023-06-29T15:30:08
+================================================================================
+[2023-06-29T15:31:15.958+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.65s           2023-06-29T15:31:09
+================================================================================
+[2023-06-29T15:31:44.192+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:31:44.195+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:31:46.228+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.70s           2023-06-29T15:31:35
+================================================================================
+[2023-06-29T15:32:16.926+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.59s           2023-06-29T15:31:52
+================================================================================
+[2023-06-29T15:32:45.092+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:32:45.094+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:32:47.123+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.59s           2023-06-29T15:31:52
+================================================================================
+[2023-06-29T15:33:17.284+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.65s           2023-06-29T15:32:53
+================================================================================
+[2023-06-29T15:33:45.107+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:33:45.108+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:33:47.437+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.65s           2023-06-29T15:32:53
+================================================================================
+[2023-06-29T15:34:17.611+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.70s           2023-06-29T15:33:54
+================================================================================
+[2023-06-29T15:34:45.111+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:34:45.113+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:34:47.758+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.70s           2023-06-29T15:33:54
+================================================================================
+[2023-06-29T15:35:17.924+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.68s           2023-06-29T15:34:55
+================================================================================
+[2023-06-29T15:35:46.076+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:35:46.078+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:35:48.107+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.68s           2023-06-29T15:34:55
+================================================================================
+[2023-06-29T15:36:18.280+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.66s           2023-06-29T15:35:56
+================================================================================
+[2023-06-29T15:36:46.415+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:36:46.416+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:36:48.437+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.66s           2023-06-29T15:35:56
+================================================================================
+[2023-06-29T15:37:18.597+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.59s           2023-06-29T15:36:57
+================================================================================
+[2023-06-29T15:37:46.767+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:37:46.769+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:37:48.795+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.59s           2023-06-29T15:36:57
+================================================================================
+[2023-06-29T15:38:19.108+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.64s           2023-06-29T15:37:58
+================================================================================
+[2023-06-29T15:38:47.256+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:38:47.257+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:38:49.284+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.70s           2023-06-29T15:38:37
+================================================================================
+[2023-06-29T15:39:19.467+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.70s           2023-06-29T15:38:37
+================================================================================
+[2023-06-29T15:39:47.377+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:39:47.378+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:39:49.767+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.75s           2023-06-29T15:39:38
+================================================================================
+[2023-06-29T15:40:19.919+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.75s           2023-06-29T15:39:38
+================================================================================
+[2023-06-29T15:40:47.380+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:40:47.381+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:40:50.078+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.66s           2023-06-29T15:40:39
+================================================================================
+[2023-06-29T15:41:20.249+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.66s           2023-06-29T15:40:39
+================================================================================
+[2023-06-29T15:41:47.711+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:41:47.713+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:41:50.739+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.66s           2023-06-29T15:41:40
+================================================================================
+[2023-06-29T15:42:20.933+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.66s           2023-06-29T15:41:40
+================================================================================
+[2023-06-29T15:42:47.728+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:42:47.730+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:42:51.378+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.63s           2023-06-29T15:42:30
+================================================================================
+[2023-06-29T15:43:21.542+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.63s           2023-06-29T15:42:30
+================================================================================
+[2023-06-29T15:43:48.070+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:43:48.071+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:43:52.103+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.65s           2023-06-29T15:43:49
+================================================================================
+[2023-06-29T15:44:22.258+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.65s           2023-06-29T15:43:49
+================================================================================
+[2023-06-29T15:44:22.517+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-06-29T15:50:34.644+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2023-06-29T15:50:34.656+0000] {manager.py:484} INFO - Process each file at most once every 60 seconds
+[2023-06-29T15:50:34.657+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 60 seconds
+[2023-06-29T15:50:34.657+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:50:34.661+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:50:35.077+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/apartment_transaction_dag.py     58  0.28s             0           0
+================================================================================
+[2023-06-29T15:51:05.286+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  4.80s           2023-06-29T15:50:39
+================================================================================
+[2023-06-29T15:51:34.919+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:51:34.923+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:51:35.453+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  4.80s           2023-06-29T15:50:39
+================================================================================
+[2023-06-29T15:52:05.664+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.93s           2023-06-29T15:51:40
+================================================================================
+[2023-06-29T15:52:35.219+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:52:35.221+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:52:35.828+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.93s           2023-06-29T15:51:40
+================================================================================
+[2023-06-29T15:53:06.042+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.68s           2023-06-29T15:52:41
+================================================================================
+[2023-06-29T15:53:35.228+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2023-06-29T15:53:35.229+0000] {manager.py:729} INFO - There are 1 files in /opt/airflow/dags
+[2023-06-29T15:53:36.247+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.68s           2023-06-29T15:52:41
+================================================================================
+[2023-06-29T15:54:06.499+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/apartment_transaction_dag.py                           1           0  0.67s           2023-06-29T15:53:42
+================================================================================

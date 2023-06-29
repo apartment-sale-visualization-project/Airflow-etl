@@ -22,17 +22,14 @@ CONFIG = dotenv_values(".env")
 if not CONFIG:
     CONFIG = os.environ
 
-args = {"owner": "Airflow", "start_date":datetime(2020,1,1), "catchup": True}
-
-# dag = DAG(dag_id="apartment_transaction_etl_dag", default_args=args, schedule_interval=relativedelta(months=1))
 dag = DAG(
     dag_id="apartment_transaction_etl_dag",
     schedule_interval=relativedelta(months=1),
-    start_date=datetime(2022,8,1),
+    start_date=datetime(2023,1,1),
+    end_date=datetime(2023,5,1),
     catchup=True
 )
 
-DATASET_URL = "https://gist.githubusercontent.com/mmphego/5b6fc4d6dc3c8fba4fce9d994a2fe16b/raw/ab5df0e76812e13df5b31e466a5fb787fac0599a/wine_quality.csv"
 API_URL = 'http://openapi.molit.go.kr:8081/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptTrade?'
 DISTRICT_CODE = {'11110': '서울특별시 종로구', '11140': '서울특별시 중구', '11170': '서울특별시 용산구', '11200': '서울특별시 성동구', '11215': '서울특별시 광진구', '11230': '서울특별시 동대문구', '11260': '서울특별시 중랑구', '11290': '서울특별시 성북구', '11305': '서울특별시 강북구', '11320': '서울특별시 도봉구', '11350': '서울특별시 노원구', '11380': '서울특별시 은평구', '11410': '서울특별시 서대문구', '11440': '서울특별시 마포구', '11470': '서울특별시 양천구', '11500': '서울특별시 강서구', '11530': '서울특별시 구로구', '11545': '서울특별시 금천구', '11560': '서울특별시 영등포구', '11590': '서울특별시 동작구', '11620': '서울특별시 관악구', '11650': '서울특별시 서초구', '11680': '서울특별시 강남구', '11710': '서울특별시 송파구', '11740': '서울특별시 강동구'}
 
@@ -78,11 +75,9 @@ def get_items(response):
 
 @logger
 def extract(execution_date):
-    # print(f"Reading dataset from {dataset_url}")
-    # df = pd.read_csv(dataset_url)
-    year = execution_date[:4]
-    month = execution_date[5:7]
-    date = year+month
+    year = execution_date.year
+    month = execution_date.month
+    date = str(year) + str(month).zfill(2)
     items_list = []
     for code in DISTRICT_CODE:
         payload = "LAWD_CD=" + code + "&" + "DEAL_YMD=" + date + "&" + "serviceKey=" + CONFIG["SERVICE_KEY"] + "&"
@@ -98,16 +93,6 @@ def extract(execution_date):
 def transform(df):
     # transformation
     print("Transforming data")
-    # df_transform = df.copy()
-    # winecolor_encoded = pd.get_dummies(df_transform["winecolor"], prefix="winecolor")
-    # df_transform[winecolor_encoded.columns.to_list()] = winecolor_encoded
-    # df_transform.drop("winecolor", axis=1, inplace=True)
-
-
-    # for column in df_transform.columns:
-    #     df_transform[column] = (
-    #         df_transform[column] - df_transform[column].mean()
-    #     ) / df_transform[column].std()
     return df
 
 @logger
@@ -120,7 +105,7 @@ def check_table_exists(table_name, engine):
 @logger
 def load_to_db(df, table_name, engine):
     print(f"Loading dataframe to DB on table: {table_name}")
-    df.to_sql(table_name, engine, if_exists="replace")
+    df.to_sql(table_name, engine, if_exists="append")
 
 @logger
 def tables_exists():
@@ -131,10 +116,10 @@ def tables_exists():
     db_engine.dispose()
 
 @logger
-def etl():
+def etl(**context):
     db_engine = connect_db()
 
-    raw_df = extract(DATASET_URL)
+    raw_df = extract(context["execution_date"])
     raw_table_name = "apartment_transaction_table"
 
     load_to_db(raw_df, raw_table_name, db_engine)
@@ -142,7 +127,11 @@ def etl():
     db_engine.dispose()
 
 with dag:
-    run_etl_task = PythonOperator(task_id="run_etl_task", python_callable=etl)
+    run_etl_task = PythonOperator(
+        task_id="run_etl_task", 
+        python_callable=etl,
+        provide_context=True
+        )
     run_tables_exists_task = PythonOperator(
         task_id="run_tables_exists_task", python_callable=tables_exists)
 
