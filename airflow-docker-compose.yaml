@@ -46,6 +46,7 @@ services:
   postgres:
     image: postgres:13
     environment:
+      POSTGRES_HOST: postgres
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
