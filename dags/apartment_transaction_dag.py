@@ -12,17 +12,53 @@ import requests
 from datetime import datetime, timezone
 import csv
 from dateutil.relativedelta import relativedelta
+import pendulum
+from functools import wraps
+from sqlalchemy.exc import SQLAlchemyError
 
 def connect_db():
-    print("Connecting to DB")
-    connection_uri = "postgresql+psycopg2://{}:{}@{}:{}".format(
+    print(f'Connecting to DB, DB name is {CONFIG["POSTGRES_DB"]}')
+    connection_uri = "postgresql://{}:{}@{}:{}/postgres".format(
         CONFIG["POSTGRES_USER"],
         CONFIG["POSTGRES_PASSWORD"],
         CONFIG["POSTGRES_HOST"],
         CONFIG["POSTGRES_PORT"],
     )
-    engine = create_engine(connection_uri, pool_pre_ping=True)
-    engine.connect()
+
+    engine = create_engine(connection_uri, pool_pre_ping=True, isolation_level='AUTOCOMMIT')
+    conn = engine.connect()
+
+    try:
+        engine.execute(f'CREATE DATABASE {CONFIG["POSTGRES_DB"]}')
+        print(f'crate Database: {CONFIG["POSTGRES_DB"]}')
+    except:
+        print("Database already exists")
+        pass
+
+    try:
+        engine.execute(f'CREATE SCHEMA raw_data')
+        print("create schema: raw_data")
+    except:
+        print("schema already exists")
+        pass
+
+    try:
+        engine.execute('''
+                    CREATE TABLE raw_data.apartment_sale_info(
+                    id SERIAL PRIMARY KEY,
+                    deal_amount varchar(40),
+                    deal_year varchar(4),
+                    deal_month varchar(2),
+                    deal_day varchar(2),
+                    area_for_exclusive_use varchar(10),
+                    regional_code varchar(5))
+                    ''')
+        print("create table: apartment_sale_info")
+    except:
+        print("table already exists")
+        pass
+
+    conn.close()
     return engine
 
 def get_items(response):
@@ -50,16 +86,25 @@ def extract(code, **context):
     return item_list
 
 @task
-def transform(df):
+def transform(raw):
     print(f">>> Running transform function.")
-    return df
+    print(raw)
+    use_key = ['거래금액', '년', '월', '일', '전용면적', '지역코드']
+    transformed=[]
+    for sub_dict in raw:
+        transformed_dict={}
+        for key in use_key:
+            transformed_dict[key]=sub_dict[key]
+        transformed.append(transformed_dict)
+    return transformed
 
 @task
-def load(df, table_name, engine):
+def load(transformed, table_name, engine):
     print(f">>> Running load function.")
     print(f"Loading dataframe to DB on table: {table_name}")
-    df=pd.DataFrame(df, columns=["거래금액","거래유형","건축년도","년","법정동","아파트", "월", "일", "전용면적","중개사소재지","지번","지역코드","층", "해제사유발생일", "해제여부"])
-    df.to_sql(table_name, engine, if_exists="append", index=False)
+    print(transformed)
+    df=pd.DataFrame(transformed, columns=['거래금액', '년', '월', '일', '전용면적', '지역코드'])
+    df.to_sql(table_name, engine, if_exists="append", index=True)
 
 # @logger
 # def etl(**context):
@@ -70,10 +115,10 @@ def load(df, table_name, engine):
 #     db_engine.dispose()
 
 with DAG(
-    dag_id="apartment_transaction_etl_dag",
-    schedule_interval=relativedelta(months=1),
-    start_date=datetime(2022,8,1),
-    catchup=False
+    dag_id="apartment_transaction_etl_dag_test9",
+    schedule = '0 0 1 * *',
+    start_date = pendulum.datetime(2020,1,1),
+    end_date = pendulum.datetime(2020,2,1)
 ) as dag:
     CONFIG = dotenv_values(".env")
     if not CONFIG:
