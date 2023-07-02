@@ -29,13 +29,6 @@ def connect_db():
     conn = engine.connect()
 
     try:
-        engine.execute(f'CREATE DATABASE {CONFIG["POSTGRES_DB"]}')
-        print(f'crate Database: {CONFIG["POSTGRES_DB"]}')
-    except:
-        print("Database already exists")
-        pass
-
-    try:
         engine.execute(f'CREATE SCHEMA raw_data')
         print("create schema: raw_data")
     except:
@@ -89,22 +82,22 @@ def extract(code, **context):
 def transform(raw):
     print(f">>> Running transform function.")
     print(raw)
-    use_key = ['거래금액', '년', '월', '일', '전용면적', '지역코드']
+    use_key = {'거래금액': 'deal_amount', '년': 'deal_year', '월': 'deal_month', '일': 'deal_day', '전용면적': 'area_for_exclusive_use', '지역코드': 'regional_code'}
     transformed=[]
     for sub_dict in raw:
         transformed_dict={}
-        for key in use_key:
-            transformed_dict[key]=sub_dict[key]
+        for prev_column, new_column in use_key.items():
+            transformed_dict[new_column]=sub_dict[prev_column]
         transformed.append(transformed_dict)
     return transformed
 
 @task
-def load(transformed, table_name, engine):
+def load(transformed, table_name, schema, engine):
     print(f">>> Running load function.")
     print(f"Loading dataframe to DB on table: {table_name}")
     print(transformed)
-    df=pd.DataFrame(transformed, columns=['거래금액', '년', '월', '일', '전용면적', '지역코드'])
-    df.to_sql(table_name, engine, if_exists="append", index=True)
+    df=pd.DataFrame(transformed, columns=['deal_amount', 'deal_year', 'deal_month', 'deal_day', 'area_for_exclusive_use', 'regional_code'])
+    df.to_sql(table_name, engine, schema=schema, if_exists="append", index=False)
 
 # @logger
 # def etl(**context):
@@ -115,10 +108,9 @@ def load(transformed, table_name, engine):
 #     db_engine.dispose()
 
 with DAG(
-    dag_id="apartment_transaction_etl_dag_test9",
+    dag_id="apartment_transaction_etl_dag_test10",
     schedule = '0 0 1 * *',
-    start_date = pendulum.datetime(2020,1,1),
-    end_date = pendulum.datetime(2020,2,1)
+    start_date = pendulum.datetime(2023,4,1)
 ) as dag:
     CONFIG = dotenv_values(".env")
     if not CONFIG:
@@ -127,8 +119,9 @@ with DAG(
     DISTRICT_CODE = {'11110': '서울특별시 종로구', '11140': '서울특별시 중구', '11170': '서울특별시 용산구', '11200': '서울특별시 성동구', '11215': '서울특별시 광진구', '11230': '서울특별시 동대문구', '11260': '서울특별시 중랑구', '11290': '서울특별시 성북구', '11305': '서울특별시 강북구', '11320': '서울특별시 도봉구', '11350': '서울특별시 노원구', '11380': '서울특별시 은평구', '11410': '서울특별시 서대문구', '11440': '서울특별시 마포구', '11470': '서울특별시 양천구', '11500': '서울특별시 강서구', '11530': '서울특별시 구로구', '11545': '서울특별시 금천구', '11560': '서울특별시 영등포구', '11590': '서울특별시 동작구', '11620': '서울특별시 관악구', '11650': '서울특별시 서초구', '11680': '서울특별시 강남구', '11710': '서울특별시 송파구', '11740': '서울특별시 강동구'}
 
     db_engine = connect_db()
-    raw_table_name = "apartment_transaction_table"
+    schema = "raw_data"
+    raw_table_name = "apartment_sale_info"
     for code in DISTRICT_CODE:
         raw_list=transform(extract(code))
-        load(raw_list, raw_table_name, db_engine)
+        load(raw_list, raw_table_name, schema, db_engine)
     db_engine.dispose()
