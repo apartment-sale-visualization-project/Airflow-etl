@@ -108,9 +108,10 @@ def load(transformed, table_name, schema, engine):
 #     db_engine.dispose()
 
 with DAG(
-    dag_id="apartment_transaction_etl_dag_test10",
+    dag_id="apartment_transaction_etl_dag_test11",
     schedule = '0 0 1 * *',
-    start_date = pendulum.datetime(2023,4,1)
+    start_date = pendulum.datetime(2020,1,1),
+    end_date = pendulum.datetime(2020,2,1)
 ) as dag:
     CONFIG = dotenv_values(".env")
     if not CONFIG:

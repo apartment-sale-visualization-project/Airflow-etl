@@ -1,29 +1,13 @@
 version: "3.8"
 
 services:
-  jupyter_notebook:
-    image: "jupyter/minimal-notebook"
-    container_name: ${CONTAINER_NAME:-jupyter_notebook}
-    environment:
-      JUPYTER_ENABLE_LAB: "yes"
-    ports:
-      - "8888:8888"
-    volumes:
-      - ${PWD}:/home/jovyan/work
-    depends_on:
-      - database
-    links:
-      - database
-    networks:
-      - etl_network
-
   database:
     image: "postgres:11"
     container_name: ${CONTAINER_NAME:-database}
     ports:
-      - "5458:5458"
+      - "5432:5432"
     expose:
-      - "5458"
+      - "5432"
     environment:
       POSTGRES_DB: "${POSTGRES_DB}"
       POSTGRES_HOST: "${POSTGRES_HOST}"
