@@ -68,7 +68,12 @@ def get_items(response):
     return item_list
 
 @task
-def extract(code, **context):
+def start():
+    print("Start Task")
+    return 1
+
+@task
+def extract(start, code, **context):
     year = context["execution_date"].year
     month = context["execution_date"].month
     date = str(year) + str(month).zfill(2)
@@ -98,21 +103,19 @@ def load(transformed, table_name, schema, engine):
     print(transformed)
     df=pd.DataFrame(transformed, columns=['deal_amount', 'deal_year', 'deal_month', 'deal_day', 'area_for_exclusive_use', 'regional_code'])
     df.to_sql(table_name, engine, schema=schema, if_exists="append", index=False)
+    return True
 
-# @logger
-# def etl(**context):
-#     db_engine = connect_db()
-#     raw_df = extract(context["execution_date"])
-#     raw_table_name = "apartment_transaction_table"
-#     load_to_db(raw_df, raw_table_name, db_engine)
-#     db_engine.dispose()
+@task
+def end(etl):
+    print("End Task")
+    return 1
 
 with DAG(
-    dag_id="apartment_transaction_etl_dag_test11",
+    dag_id="apartment_transaction_etl_dag",
     schedule = '0 0 1 * *',
-    start_date = pendulum.datetime(2020,1,1),
-    end_date = pendulum.datetime(2020,2,1)
+    start_date = pendulum.datetime(2020,1,1)
 ) as dag:
+    start = start()
     CONFIG = dotenv_values(".env")
     if not CONFIG:
         CONFIG = os.environ
@@ -122,7 +125,10 @@ with DAG(
     db_engine = connect_db()
     schema = "raw_data"
     raw_table_name = "apartment_sale_info"
+    etl=[]
     for code in DISTRICT_CODE:
-        raw_list=transform(extract(code))
-        load(raw_list, raw_table_name, schema, db_engine)
+        raw_list=transform.override(task_id="transform"+code)(extract.override(task_id="extract"+code)(start, code))
+        result = load.override(task_id="load"+code)(raw_list, raw_table_name, schema, db_engine)
+        etl.append(result)
     db_engine.dispose()
+    end(etl)
